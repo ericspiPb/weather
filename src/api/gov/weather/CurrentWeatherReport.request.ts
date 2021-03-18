@@ -1,4 +1,4 @@
-import weatherInstance from './weather.instance';
+import weatherInstance from './weather.service';
 
 export interface WeatherData {
   place: string;
@@ -10,7 +10,7 @@ export interface LightingData extends WeatherData {
 
 export interface RegionalWeatherData extends WeatherData {
   value: number;
-  unit: 'C' | 'F' | string;
+  unit: 'C' | 'percent' | string;
 }
 
 export interface RainfallData extends WeatherData {

@@ -2,9 +2,9 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import requestCurrentWeatherReport from './api/gov/CurrentWeatherReport.request';
+import requestCurrentWeatherReport from './api/gov/weather/CurrentWeatherReport.request';
 
-import WeatherIcon from './api/gov/weather.icon';
+import WeatherIcon from './api/gov/weather/icon.component';
 
 function App() {
   requestCurrentWeatherReport.then((res) => console.log(res.data));

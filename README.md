@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+# Hong Kong Weather Card
+## archived due to geolocation cannot convert to regional
+## Original planning
+1. Request Current Geolocation
+2. Request Current Weather
+3. Display
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
