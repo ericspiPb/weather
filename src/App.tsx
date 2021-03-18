@@ -2,7 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import requestCurrentWeatherReport from './api/gov/CurrentWeatherReport.request';
+
+import WeatherIcon from './api/gov/weather.icon';
+
 function App() {
+  requestCurrentWeatherReport.then((res) => console.log(res.data));
+
   return (
     <div className="App">
       <header className="App-header">
@@ -16,7 +22,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Log React
+          {WeatherIcon(50)}
         </a>
       </header>
     </div>
